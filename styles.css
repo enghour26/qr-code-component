@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+:root{
+/* ## Layout
+
+The designs were created to the following widths: */
+
+--mobile: 325px;
+--desktop: 1440px;
+
+/* ## Colors */
+
+--white: hsl(0, 0%, 100%);
+--light-gray: hsl(212, 45%, 89%);
+--grayish-blue: hsl(220, 15%, 55%);
+--dark-blue: hsl(218, 44%, 22%);
+
+/* ## Typography
+
+### Body Copy */
+
+--fontSize: 15px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Outfit', sans-serif;
+    font-size: var(--fontSize);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--light-gray);
+    gap: 3rem;
+}
+.container{
+    width: 100%;
+    padding: 0 1.5rem;
+    margin: 0;
+}
+.qr-contents{
+    margin: 0 auto;
+    width: 100%;
+    max-width: var(--mobile);
+    padding: 1rem;
+    background-color: var(--white);
+    border-radius: 1.2rem;
+    text-align: center;
+}
+.qr-img img{
+    width: 100%;
+    display: block;
+    border-radius: 0.8rem;
+}
+.content{
+    margin: 0 1.64rem;
+}
+h3.main-text{
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    line-height: 1.4;
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+p.sub-text{
+    
+    margin-bottom: 1rem;
+    color: var(--grayish-blue);
+    
+}
